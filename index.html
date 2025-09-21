@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <head>
     <title>My First Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+
+<style>
+    body {
+        background-color: #f0f8ff;
+        font-family: Arial, sans-serif;
+    }
+    h1 {
+        color: darkred;
+        text-align: center;
+    }
+    h2 {
+        font-style: italic;
+    }
+</style>
+
 </head>
 <body>
-<h1> Zhomartov Yerassyl </h1>
-<h2> Group : SE-2435 , 2 course </h2>
+<div class="header"> <h1 id="main-heading">Zhomartov Yerassyl</h1> </div>
 <h3> About me :</h3>
-<p> My name is Yerassyl, I'm 18 years old, Student of AITU. My hobby is watching the football and UFC</p>
-<ol>
-    <li> Watching Football </li>
-    <li> Sleeping </li>
-    <li> UFC </li>
-</ol>
+<p style="color: blue;"> My name is Yerassyl, I'm 18 years old, Student of AITU. My hobby is watching the football and UFC</p>
+<p class="highlight">This site is about me and my life</p>
+<div class="static-box">Football is always part of my routine </div>
+<div class="relative-box">Sometimes I shift my focus to UFC more</div>
+<div class="absolute-box">Group : SE-2435 , 2 course</div>
+<div class="left">My hobbies: Watching football & UFC</div>
+<div class="right">My studies: Web development at AITU</div>
+<div class="clearfix"></div>
 <ul> 
     <li> <a href = "https://www.youtube.com/"> Youtube </a></li>
     <li> <a href = "https://k359.liveball.st/"> Liveball </a></li>
 </ul>
-<img src="Yerassyl.jpg" height="500"> </img>
+<img src="Yerassyl.jpg" alt="Yerassyl photo" > 
 <button>Click Me</button>
-<table border="1">
+<table border = "5">
     <tr>
         <th> Subject </th>
         <th> Day </th>
@@ -39,12 +57,13 @@
 <td> Tuesday </td> 
 <td> 14:00 </td>
 </tr>
-</table>
-<table border="1" width="30%">
-    <tr><p>
+</table >
+<div class="main">
+     <table border = "5" width="30%">
+    <tr>
         <th> Menu </th>
         <th> Content </th>
-    </p></tr>
+    </tr>
     <tr>
         <td><ul>
         <li>Home</li>
@@ -53,6 +72,9 @@
         </ul></td>
     <td> Content is available only by subscription </td></tr>
 </table>
+</div>
+
+
 
 <p>
     	&#128523;&#128526;&#128564;
@@ -66,5 +88,6 @@
     <input type="color" name="color"><br>
     <input type="submit" value="submit">
 </form>
+<div class="footer"> <p>Copyright © 2025</p></div>
 </body>
 </html>
